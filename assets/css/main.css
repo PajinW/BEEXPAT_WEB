@@ -1755,6 +1755,16 @@
 	.align-center {
 		text-align: center;
 	}
+	.intro-center h2{
+		text-align: center;
+	}
+
+	.intro-center p{
+		margin-bottom: 0;
+	}
+.service-center {
+	text-align:center;
+}
 
 	.align-right {
 		text-align: right;
@@ -1764,6 +1774,37 @@
 		max-width: 75em;
 		margin: 0 auto;
 	}
+.inner .intro {
+	background: white;
+	padding: 1.5em;
+	margin-top: 1em;
+	border: 3px solid #6cc091;
+}
+.inner .intro h2 {
+   text-align: center;
+}
+
+.inner .service h2 {
+   text-align: center;
+}
+.inner .service span {
+text-align: center;
+}
+
+ .service article{
+	background: white;
+	border-right: 3px solid #6cc091;
+	padding:0 20px 0 4px;
+	margin-top: 1em;
+}
+
+#three .service article:last-of-type{
+	border-right: none;
+}
+
+.inner .service article {
+width: 18%;
+}
 
 		@media screen and (max-width: 1280px) {
 
@@ -1792,8 +1833,9 @@
 		}
 
 	section.wrapper, article.wrapper {
-		padding: 6em 0;
+		padding: 2em 0 3em 0;
 	}
+
 
 		section.wrapper header, article.wrapper header {
 			margin-bottom: 4em;
@@ -1803,7 +1845,10 @@
 				font-size: 2.75em;
 				margin: 0 0 .5em 0;
 			}
-
+			section.wrapper header h3, article.wrapper header h3 {
+				font-size: 1.5em;
+				/*margin: 0 0 .5em 0;*/
+			}
 			section.wrapper header p, article.wrapper header p {
 				font-size: 1em;
 			}
@@ -1891,6 +1936,15 @@
 		flex-wrap: wrap;
 		width: 100%;
 	}
+.flex.frame article {
+background: #f4f1eb;
+margin-right: 2%;
+padding: 12px;
+}
+.flex p:last-of-type {
+	margin-bottom: 1em;
+
+}
 
 		.flex.flex-2 {
 			-moz-justify-content: space-between;
@@ -1900,8 +1954,10 @@
 		}
 
 			.flex.flex-2 article {
-				width: 50%;
+				width: 30%;
+
 			}
+
 
 		@media screen and (max-width: 980px) {
 
@@ -2691,6 +2747,16 @@
 			}
 
 		}
+/*three*/
+
+#three span {
+	border-right: 5px solid #AAA;
+	/*padding: 0 0 0 0;*/
+}
+#three span:last-of-type {
+	border-right: none;
+}
+
 
 /* Header */
 
@@ -3120,7 +3186,7 @@
 /* Footer */
 
 	#footer {
-		padding: 2em 0 1em 0;
+		padding: 1em 0 1em 0;
 		background: #6cc091;
 		color: #fff;
 		text-align: center;
@@ -3168,6 +3234,13 @@
 
 				#footer .copyright a:hover {
 					color: #FFF;
+				}
+				#footer span {
+					border-right: 1px solid #FFF;
+					padding: 0 20px 0 16px;
+				}
+				#footer span:last-of-type {
+					border-right: none;
 				}
 
 		@media screen and (max-width: 980px) {
