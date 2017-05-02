@@ -1755,15 +1755,34 @@
 	.align-center {
 		text-align: center;
 	}
+
+	.align-center h2{
+text-align: center;
+color:darkgrey;
+	}
+
+.align-center p{
+text-align: center;
+color:#666666;
+
+}
 	.intro-center h2{
 		text-align: center;
+		color: darkgrey;
 	}
 
 	.intro-center p{
 		margin-bottom: 0;
+		color:#666666;
 	}
 .service-center {
 	text-align:center;
+}
+
+.service-center h2 {
+text-align:center;
+color:darkgrey;
+
 }
 
 	.align-right {
@@ -1786,9 +1805,11 @@
 
 .inner .service h2 {
    text-align: center;
+
 }
 .inner .service span {
 text-align: center;
+color:#666666;
 }
 
  .service article{
@@ -1954,7 +1975,7 @@ padding: 12px;
 		}
 
 			.flex.flex-2 article {
-				width: 30%;
+				width: 45%;
 
 			}
 
@@ -2816,9 +2837,10 @@ padding: 12px;
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
 			padding: 0 0.75em;
-			color: inherit;
+			color: #6cc091;
 			text-decoration: none;
 			font-size: 1.5em;
+			/*position: fixed;*/
 		}
 
 			#header a:hover {
@@ -3243,7 +3265,7 @@ padding: 12px;
 					border-right: none;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) and (min-width: 481px){
 
 			#footer {
 				padding: 4em 0;
@@ -3258,3 +3280,8 @@ padding: 12px;
 			}
 
 		}
+		@media screen and (max-width: 480px) {
+
+			#footer {
+				padding: 4em 0;
+			}
